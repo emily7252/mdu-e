@@ -1,0 +1,107 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #97bcfc;
+  --white: #ffffff;
+  --green: #25df8a;
+  --orange: #d49740;
+  /* navigationsfarve */
+--navfarve: #725fbf;
+
+  /* fonte */
+}
+/*google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+/* bruges sådan: font-family: 'Urbanist', sans-serif;
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: #97bcfc;
+  font-family:'Amatic SC', cursive;
+}
+
+h3, h4, h5, h6 {
+  font-family:'Amatic SC', cursive;
+  color: red;
+
+}
+
+/* Layout */
+
+/* Typografi */
+h1{
+  color: var(--white);
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+  background-color: var(--white);
+  text-align: center;
+  padding: 23px;
+}
+
+nav,
+h2 {
+  background-color: var(--navfarve);
+  color: var(--white);
+  padding: 20px;
+
+}
+
+/* links */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: pink;
+
+}
+
+/* nu bliver menuen vandret uden bullets */
+nav ul {
+  list-style-type: none; /*fjerner bullets ved lister*/
+}
+
+nav ul li {
+  display: inline;
+
+}
+
+/*tekstbredde*/
+h2,p {
+  width: 400px;
+}
+
+p{
+  margin-top: 37px;
+}
+
+/* wrap går rundt om alle elementer i dette ex*/
+#wrap {
+  width: 655px;
+  margin:auto;
+}
+
+/* galleriet styles */
+
+figure {
+
+}
+
+
+
+.galleri figure {
+  float: left;
+}
+
+/* baggrundsbillede */
+div {
+  background-image: url('../images/gif');
+}
